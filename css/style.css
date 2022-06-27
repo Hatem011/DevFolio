@@ -1,0 +1,271 @@
+body{
+   background-color: #F5F5F5;
+}
+.nav-link,.navbar-brand{
+    color: #fff;
+}
+nav a{
+    font-size: 22px;
+   
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.navbar-nav{
+    width: 60%;
+}
+.nav-link{
+    position: relative;
+    padding-left: 0 !important; 
+    padding-right: 0 !important;
+}
+.nav-link::before
+{
+content: "";
+position: absolute;
+bottom: 0;
+left: 0;
+height: 1px;
+width: 0%;
+background-color: #fff;
+transition: width .5s;
+}
+.nav-link:hover::before{
+    width: 90%;
+}
+header{
+    background-image: url("../images/hero-bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+header .layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0, 0, .5);
+}
+ header h2{
+    text-align: center;
+    margin-top: 30px;   
+}
+header h2::after{
+    content: "|";
+    animation-name:typing ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes typing {
+    0%{content: 'D|';}
+    3%{content: 'De|';}
+    6%{content: 'Des|';}
+    9%{content: "Desi|";}
+    12%{content: "Desig|";}
+    15%{content: "Design|";}
+    18%{content: "Designe|";}
+    21%{content: "Designer|";}
+    24%{content: "Designe|";}
+    27%{content: "Design|";}
+    30%{content: "Desig|";}
+    33%{content: "Desi|";}
+    36%{content: "Des|";}
+    39%{content: "De|";}
+    42%{content: "D|";}
+    48%{content: "|";}
+    51%{content: "D|";}
+    54%{content: "De|";}
+    57%{content: "Dev|";}
+    60%{content: "Devl|";}
+    63%{content: "Devlo|";}
+    66%{content: "Devlop|";}
+    69%{content: "Devlope|";}
+    72%{content: "Devloper|";}
+    75%{content: "Devlope|";} 
+     78%{content: "Devlop|";}
+     81%{content: "Devlo|";}
+     84%{content: "Devl|";}
+     87%{content: "Dev|";}
+     90%{content: "De|";}
+     93%{content: "D|";}; 
+    96%{content: "|";}
+}
+.about{
+    background-color: #fff;
+    border: 2px solid rgb(245, 243, 243);
+}
+.about .main{
+    font-size: 23px;
+}
+.line{
+    width: 35px;
+    height: 6px;
+    background-color: blue;
+   margin: auto ;
+    display: block;
+}
+.Services-item{
+    margin-top: 15px;
+    padding: 20px;
+    border: 1px solid #fff ;
+    border-radius: 20px;
+    background-color: #fff;
+   }
+   .Services-item i{
+       border: 8px solid blue;
+       border-radius: 50%;
+       transition:all .5s ;
+   }
+   .Services-item:hover i{
+       background-color: blue;
+       border-color: #09c;
+   }
+   .Services-item p
+    {
+    color: rgb(102, 100, 100);
+   }
+   .counter{
+       position: relative;
+      background-image: url("../images/counters-bg.jpg");
+      background-size: cover;
+      background-position: center center;
+      height: 80vh;
+   }
+     .layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #075BB7;
+    opacity: .7;
+   } 
+   .counter-item{
+       padding: 0 50px;
+   }
+   .counter i{
+       border: 8px solid #CDE1F8;
+       border-radius: 50%;
+       padding: 15px;
+   }
+   .counter .para{
+font-size: 25px;
+   }
+  .Portfolio-item{
+      overflow: hidden;
+      margin: 15px 0;
+  }
+   .Portfolio-item p{
+font-size: 20px;
+   }
+   .Portfolio-item img{
+       transition: transform .5s;
+   }
+   .Portfolio-item:hover img{
+       transform: scale(1.2);
+   }
+   .Portfolio-item .hover
+   {
+       color: blue;
+   }
+   .Portfolio-item .hover:hover {
+       color: red;
+    }
+    .Portfolio-item .hover{
+        transition: color .5s;
+    }
+    .carousel-indicators [ data-bs-target]
+ {
+     height: 10px;
+     width: 10px;
+     border-radius: 50%;
+ }
+    .Blog-item{
+        border: 1px solid rgb(211, 210, 210);
+        
+    }
+    .box img{
+width: 25px;
+height: 25px;
+    }
+    .slider {
+       background-image: url("../images/overlay-bg.jpg");
+       background-size: cover;
+       background-position: center ;
+       position: relative;
+       height: 100vh;
+ } 
+ .layer .slider{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #075BB7;
+    opacity: .7;
+ } 
+
+.Blog-item h6{
+    width: 70px;
+    border: 1px solid blue;
+    background-color: blue;
+}
+.contact{
+    position: relative;
+    background-image: url("../images/overlay-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgba(23, 13, 163, 0.5)
+    /* opacity: .8; */
+}
+.contact h3{
+    position: relative;
+    padding-bottom: 5px;
+}
+.contact h3::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background-color: blue;
+}
+    .contact-form input{
+        width: 480px;
+        padding: 6px 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+    .contact-form button{
+        width: 130px;
+        border-radius: 50px;
+        border: none;
+        text-align: center;
+        color: #fff;
+      
+       background-color: blue;
+    }
+   .contact-text .icon{
+       border: 2px solid blue;
+       border-radius: 50%;
+       padding: 2px 5px 7px 5px;
+   }
+ 
+ .footer{
+     background-color: blue;
+ }
+ .footer a{
+     text-decoration: none;
+     color: #fff;
+ }
